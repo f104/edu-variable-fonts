@@ -1,0 +1,15 @@
+html {
+    font-size: $font-size;
+}
+
+.body {
+    padding: 2rem;
+    margin: 0;
+    background: $color-bg;
+    color: $color-text;
+}
+
+.container {
+    @include make-container();
+}
+

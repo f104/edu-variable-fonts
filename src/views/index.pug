@@ -1,0 +1,30 @@
+extends _layouts/default
+
+block config
+    - var pagetitle = "Variable font demo"
+
+block content
+    .container
+        .block
+            p.font.js-font The five boxing wizards jump quickly! 0123456789?
+            input.js-weight-input(type="range" min="100" max="1000" value="400" name="weight")
+            p Weight: 
+                span.js-weight-info 400
+            input.js-width-input(type="range" min="25" max="150" value="100" name="width")
+            p Width: 
+                span.js-width-info 100
+                | %
+            button.js-btn Reset
+        .block
+            p 
+                span.light The five 
+                span boxing wizards 
+                span.bold jump quickly! 
+                span.super-bold 0123456789?
+            p Failback for old browsers: 
+                br
+                span.static-font 
+                    span.light The five 
+                    span boxing wizards 
+                    span.bold jump quickly! 
+                    span.super-bold 0123456789?
